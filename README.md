@@ -44,3 +44,16 @@ kubectl scale deployment nginx-deployment --replicas=5
 kubectl delete pod POD_NAME
 
 Kubernetes automatically recreates the deleted pod.
+## Project Screenshots
+
+### Docker Build
+
+![Docker Build](screenshots/docker-build-output.png)
+
+### Kubernetes Pods
+
+![Pods](screenshots/kubectl-get-pods.png)
+
+### Application Running
+
+![App](screenshots/kubernetes-app-running.png)
