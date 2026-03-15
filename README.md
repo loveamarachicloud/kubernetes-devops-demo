@@ -1,37 +1,46 @@
-# Kubernetes Deployment Demo
+# Kubernetes DevOps Demo
 
 This project demonstrates deploying a containerized application to Kubernetes using Docker and Minikube.
 
-## Tools Used
+## Technologies Used
 
 Docker
 Kubernetes
 Minikube
 kubectl
+Git
 
-## Steps
+## Project Features
 
-Build Docker image
+Containerized web application
+Kubernetes Deployment
+Service exposure using NodePort
+Application scaling
+Kubernetes self-healing test
+
+## Build Docker Image
 
 docker build -t my-devops-app .
 
-Deploy to Kubernetes
+## Deploy to Kubernetes
 
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 
-Check pods
+## Verify Pods
 
 kubectl get pods
 
-Expose service
+## Access the Application
 
 minikube service nginx-service
 
-## Features Demonstrated
+## Scaling Example
 
-Container build
-Kubernetes deployment
-Service exposure
-Scaling
-Self-healing
+kubectl scale deployment nginx-deployment --replicas=5
+
+## Self-Healing Test
+
+kubectl delete pod POD_NAME
+
+Kubernetes automatically recreates the deleted pod.
