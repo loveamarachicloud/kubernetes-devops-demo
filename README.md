@@ -1,62 +1,29 @@
 # Kubernetes DevOps Demo
+
+Dockerized web application deployed on Kubernetes using Minikube.  
+This project demonstrates container builds, Kubernetes deployments, service exposure, scaling, and self-healing behavior.
 ## Architecture
 
 ![Architecture](screenshots/architecture.png)
+## Technology Stack
 
-This project demonstrates deploying a containerized application to Kubernetes using Docker and Minikube.
+- Docker
+- Kubernetes
+- Minikube
+- kubectl
+- Git
+- Visual Studio Code
+## Quick Start
 
-## Technologies Used
-
-Docker
-Kubernetes
-Minikube
-kubectl
-Git
-
-## Project Features
-
-Containerized web application
-Kubernetes Deployment
-Service exposure using NodePort
-Application scaling
-Kubernetes self-healing test
-
-## Build Docker Image
-
-docker build -t my-devops-app .
-
-## Deploy to Kubernetes
-
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
-
-## Verify Pods
-
+### 1 Start Minikube
+minikube start
+### 2 Build Docker Image
+docker build -f docker/Dockerfile -t my-devops-app .
+### 3 Deploy to Kubernetes
+kubectl apply -f k8s/deployment.yaml
+kubectl apply -f k8s/service.yaml
+### 4 Verify the Pods
 kubectl get pods
-
-## Access the Application
-
+### 5 Access the Application
 minikube service nginx-service
 
-## Scaling Example
-
-kubectl scale deployment nginx-deployment --replicas=5
-
-## Self-Healing Test
-
-kubectl delete pod POD_NAME
-
-Kubernetes automatically recreates the deleted pod.
-## Project Screenshots
-
-### Docker Build
-
-![Docker Build](screenshots/docker-build-output.png)
-
-### Kubernetes Pods
-
-![Pods](screenshots/kubectl-get-pods.png)
-
-### Application Running
-
-![App](screenshots/kubernetes-app-running.png)
