@@ -20,11 +20,11 @@ This project demonstrates container builds, Kubernetes deployments, service expo
 ```bash
 minikube start
 ### 2 Build Docker Image
-docker build -f docker/Dockerfile -t my-devops-app .
+```docker build -f docker/Dockerfile -t my-devops-app ```.
 ### 3 Deploy to Kubernetes
-kubectl apply -f k8s/deployment.yaml
-kubectl apply -f k8s/service.yaml
+```kubectl apply -f k8s/deployment.yaml```
+```kubectl apply -f k8s/service.yaml```
 ### 4 Verify the Pods
-kubectl get pods
+```kubectl get pods```
 ### 5 Access the Application
-minikube service nginx-service
+```minikube service nginx-service```
