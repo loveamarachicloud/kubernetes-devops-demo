@@ -1,4 +1,11 @@
 # Kubernetes DevOps Demo
+# Kubernetes DevOps Demo
+
+![Docker](https://img.shields.io/badge/Docker-Container-blue?logo=docker)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-blue?logo=kubernetes)
+![Minikube](https://img.shields.io/badge/Minikube-Local%20Cluster-orange)
+![Git](https://img.shields.io/badge/Git-Version%20Control-red?logo=git)
+
 
 Dockerized web application deployed on Kubernetes using Minikube.  
 This project demonstrates container builds, Kubernetes deployments, service exposure, scaling, and self-healing behavior.
