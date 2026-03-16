@@ -1,4 +1,7 @@
 # Kubernetes DevOps Demo
+## Architecture
+
+![Architecture](screenshots/architecture.png)
 
 This project demonstrates deploying a containerized application to Kubernetes using Docker and Minikube.
 
