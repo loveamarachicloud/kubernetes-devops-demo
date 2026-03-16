@@ -79,3 +79,13 @@ minikube service nginx-service
 ### Application Running in Browser
 
 ![App](screenshots/kubernetes-app-running.png)
+## Project Roadmap
+
+Planned improvements to expand this project into a more production-like DevOps workflow:
+
+* Add Helm charts for packaging Kubernetes deployments
+* Implement ArgoCD for GitOps based deployment management
+* Integrate Prometheus for cluster and application monitoring
+* Add Grafana dashboards for visualization and observability
+* Introduce CI/CD automation for building and deploying the application
+* Expand troubleshooting and operational documentation
