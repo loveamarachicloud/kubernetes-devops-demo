@@ -22,6 +22,17 @@ The workflow covers the full lifecycle of a simple cloud-native application:
 * Verify pods and access the application through the browser
 
 The goal of this project is to practice the core DevOps workflow of building, deploying, scaling, and operating containerized applications on Kubernetes.
+## Project Features
+
+Dockerized web application
+
+Kubernetes deployment with multiple pods
+
+Service exposure using NodePort
+
+Application scaling demonstration
+
+Kubernetes self-healing test
 
 ## Architecture
 
