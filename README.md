@@ -15,15 +15,16 @@ This project demonstrates container builds, Kubernetes deployments, service expo
 - Visual Studio Code
 ## Quick Start
 
-1 Start Minikube
+### 1 Start Minikube
+
+```bash
 minikube start
-2 Build Docker Image
+### 2 Build Docker Image
 docker build -f docker/Dockerfile -t my-devops-app .
-3 Deploy to Kubernetes
+### 3 Deploy to Kubernetes
 kubectl apply -f k8s/deployment.yaml
 kubectl apply -f k8s/service.yaml
-4 Verify the Pods
+### 4 Verify the Pods
 kubectl get pods
-5 Access the Application
+### 5 Access the Application
 minikube service nginx-service
-
