@@ -59,3 +59,16 @@ kubectl get pods
 ```bash
 minikube service nginx-service
 ```
+## Screenshots
+
+### Docker Build Output
+
+![Docker Build](screenshots/docker-build-output.png)
+
+### Kubernetes Pods Running
+
+![Pods](screenshots/kubectl-get-pods.png)
+
+### Application Running in Browser
+
+![App](screenshots/kubernetes-app-running.png)
